@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import "./contactcard.css"
+import useCollapse from 'react-collapsed';
 
 function ContactCard({name,email,image,phone}) {
     const[flag,setFlag] = useState(false);
+    const { getCollapseProps, getToggleProps } = useCollapse({ flag });
 
     const handelClick = ()=>{
         if(flag===false){
@@ -15,7 +17,7 @@ function ContactCard({name,email,image,phone}) {
 
 
   return (<>
-  <div className='contact-card' onClick={handelClick}>
+  <div className='contact-card' {...getToggleProps({onClick: handelClick})}>
         <div className='image-container'>
             <img src={image} alt="emage"></img>
         </div>
@@ -25,8 +27,8 @@ function ContactCard({name,email,image,phone}) {
             </div>
             <div className='fmt'>
                 {email}
-            </div >
-                {flag?<div className='fmt'>{phone}</div>:<div></div>}
+            </div  >
+                <div className='fmt' {...getCollapseProps()}>{phone}</div>
         </div>     
     
     </div>

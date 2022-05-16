@@ -1,6 +1,6 @@
 .contact-card{
     width:inherit;
-    height:5rem;
+   min-height:5rem;
     overflow: hidden;
     margin: 0.5rem 0rem;
     display: flex;
@@ -16,7 +16,7 @@
 
 .image-container{
     width:5rem;
-    height:inherit;
+    height:5rem;
     overflow: hidden;
     padding: 0px 2%;
     
@@ -38,5 +38,6 @@ img {
     font-weight:bold;
 }
 .fmt{
+    height: 50px;
     color: rgba(0, 0, 0, 0.568);
 }
