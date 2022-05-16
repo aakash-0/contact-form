@@ -1,0 +1,42 @@
+.contact-card{
+    width:inherit;
+    height:5rem;
+    overflow: hidden;
+    margin: 0.5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.image-container{
+    width:5rem;
+    height:inherit;
+    overflow: hidden;
+    padding: 0px 2%;
+    
+}
+img {
+    width: 5rem;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 2.5rem;
+  }
+  div{
+      text-align: left;
+  }
+.contact-details{
+    width:30%;
+    padding-top:2%;
+}
+.fnt{
+    font-weight:bold;
+}
+.fmt{
+    color: rgba(0, 0, 0, 0.568);
+}
